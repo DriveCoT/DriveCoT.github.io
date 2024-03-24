@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>DriveCoT - Download</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="" />
+	<meta name="author" content="http://webthemez.com" />
+	<!-- css -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="css/jcarousel.css" rel="stylesheet" />
+	<link href="css/flexslider.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://unpkg.com/listree/dist/listree.min.css" />
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<style>
+		.collapsible-list {
+			background-color: #777;
+			color: white;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+		}
+
+		.active-list,
+		.collapsible-list:hover {
+			/*background-color: #555;*/
+		}
+
+		.collapsible-list:after {
+			/*content: '\002B';*/
+			color: white;
+			font-weight: bold;
+			float: right;
+			margin-left: 5px;
+		}
+
+		.active-list:after {
+			/*content: "\2212";*/
+		}
+
+		.content-collapse-list {
+			padding: 0 18px;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.2s ease-out;
+			background-color: #f1f1f1;
+		}
+
+		.content-collapse-list-shown {
+			padding: 0 18px;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.2s ease-out;
+			background-color: #f1f1f1;
+		}
+	</style>
+</head>
+
+<!--<head>-->
+<!--    <meta charset="utf-8">-->
+
+<!--&lt;!&ndash;    <title>V2X-Sim</title>&ndash;&gt;-->
+<!--    <title>DriveCoT</title>-->
+<!--    <meta content="width=device-width, initial-scale=1.0" name="viewport">-->
+<!--&lt;!&ndash;    <meta content="V2X-Sim" name="description">&ndash;&gt;-->
+<!--    <meta content="DriveCoT" name="description">-->
+<!--    <meta content="XXXXX" name="author">-->
+<!--    &lt;!&ndash; css &ndash;&gt;-->
+<!--    <link href="css/bootstrap.min.css" rel="stylesheet">-->
+<!--    <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">-->
+<!--    <link href="css/jcarousel.css" rel="stylesheet">-->
+<!--    <link href="css/flexslider.css" rel="stylesheet">-->
+<!--    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">-->
+<!--    <link href="css/style.css" rel="stylesheet">-->
+<!--    &lt;!&ndash; HTML5 shim, for IE6-8 support of HTML5 elements &ndash;&gt;-->
+<!--    &lt;!&ndash;[if lt IE 9]>-->
+<!--      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>-->
+<!--    <![endif]&ndash;&gt;-->
+<!--</head>-->
+
+
+<body>
+<!--	<div id="wrapper">-->
+<!--	<div class="home-page" id="wrapper">-->
+
+		<!-- start header -->
+		<header>
+			<div class="navbar navbar-default navbar-static-top" style="background-color: #9ea5ad;">
+				<div class="container">
+<!--					<div class="navbar-header">-->
+<!--						<button type="button" class="navbar-toggle" data-toggle="collapse"-->
+<!--							data-target=".navbar-collapse">-->
+<!--							<span class="icon-bar"></span>-->
+<!--							<span class="icon-bar"></span>-->
+<!--							<span class="icon-bar"></span>-->
+<!--						</button>-->
+<!--&lt;!&ndash;						<a class="navbar-brand" href="index.html"><img alt="logo" src="img/logo1.png"&ndash;&gt;-->
+<!--&lt;!&ndash;								width="220"></a>&ndash;&gt;-->
+<!--						<a class="navbar-brand" href="index.html"><img alt="logo" src="img/logo1.png"-->
+<!--								width="150"></a>-->
+<!--					</div>-->
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="https://arxiv.org/pdf/xxxx.pdf">Paper</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/tianqi-wang1996/xxx">Code</a>
+                            </li>
+                            <li class="active">
+                                <a href="download.html">Download</a>
+                            </li>
+<!--                            <li>-->
+<!--                                <a href="about-us.html">About Us</a>-->
+<!--                            </li>-->
+                            <li>
+                                <!--  <a href="contact.html">Contact</a>  -->
+                            </li>
+
+                        </ul>
+                    </div>
+				</div>
+			</div>
+		</header><!-- end header -->
+
+<!--		<section id="banner">-->
+<!--            &lt;!&ndash; Slider &ndash;&gt;-->
+<!--            <div class="flexslider" id="main-slider">-->
+<!--                <ul class="slides">-->
+<!--                    <li>-->
+<!--&lt;!&ndash;                        <video loop autoplay muted class="center-full">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <source src="img/first_video.mp4" type="video/mp4">&ndash;&gt;-->
+<!--&lt;!&ndash;                                Your browser does not support the video tag.&ndash;&gt;-->
+<!--&lt;!&ndash;                        </video>&ndash;&gt;-->
+<!--                        <div class="center-img">-->
+<!--                            <img width="50" src="./img/task description.png" alt="A description of your image">-->
+<!--                        </div>-->
+<!--                        <div class="flex-caption wow fadeInLeft animated" data-wow-animation-name="none">-->
+<!--&lt;!&ndash;                            <h3 style="text-transform: none;">DriveCoT</h3>&ndash;&gt;-->
+<!--                            <h3 style="text-transform: none;">DriveCoT</h3>-->
+<!--                            <p> <b> Integrating Chain-of-Thought Reasoning with End-to-End Driving </b> </p>-->
+
+<!--                            <span class="author-block">-->
+<!--                                <a href="https://scholar.google.com/citations?user=RIfX6LkAAAAJ&hl" target="_blank">Tianqi Wang</a><sup>1</sup>,</span>-->
+<!--                            <span class="author-block">-->
+<!--                                <a href="https://xieenze.github.io/" target="_blank">Enze Xie</a><sup>2†</sup>,-->
+<!--                            </span>-->
+<!--                            <span class="author-block">-->
+<!--                                <a href="https://ruihangchu.com/" target="_blank">Ruihang Chu</a><sup>3</sup>,-->
+<!--                            </span>-->
+<!--                            <span class="author-block">-->
+<!--                                <a href="https://scholar.google.com/citations?user=XboZC1AAAAAJ" target="_blank">Zhenguo-->
+<!--                                    Li</a><sup>2</sup>-->
+<!--                            </span>-->
+<!--                            <span class="author-block">-->
+<!--                                <a href="http://luoping.me/" target="_blank">Ping Luo</a><sup>1†</sup>,-->
+<!--                            </span>-->
+<!--                            <br>-->
+
+<!--                            <span class="author-block"><sup>1</sup>The University of Hong Kong,</span>-->
+<!--                            <span class="author-block"><sup>2</sup>Huawei Noah's Ark Lab,</span>-->
+<!--                            <span class="author-block"><sup>3</sup>The Chinese University of Hong Kong</span>-->
+<!--                            <span class="eql-cntrb"><small><br><sup>†</sup>Corresponding authors.</small></span>-->
+<!--                        </div>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; end slider &ndash;&gt;-->
+<!--        </section>-->
+
+		<section id="inner-headline">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h2 class="pageTitle">Download</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="content">
+			<div class="container">
+
+				<div class="row">
+					<div class="about wow animated">
+						<p style="font-size:16px">
+							The DriveCoT dataset comprises 1058 scenarios and 36K labeled samples (similar to nuScenes),
+							collected at a 2 Hz frequency, averaging 17 seconds per scenario.
+							We partition the dataset into training, validation, and testing sets at a ratio of 70%, 15%, and 15%, respectively,
+							yielding 25.3K training, 5.5K validation, and 5.5K testing samples. To prevent data leakage,
+							we assign all data from the same scenario to the same set. Additionally,
+							we ensure that the distribution of CoT aspects is similar across all splits. <br>
+
+							The file strutures are shown below and you can <b>click the (+) symbol</b> to expand and see more details.
+<!--							Instructions on setting up and using the data is avaliable on the <a href="tutorial.html"-->
+<!--								target="_blank">tutorial</a> page.-->
+						</p>
+
+<!--						<p style="font-size:16px">Please send us an access request with your affiliation and role, and-->
+<!--							we will grant the access. </p>-->
+
+<!--						<p style="font-size:16px">The complete directory tree structure of DriveCoT 2.0 are listed below.-->
+<!--							However, you can <b>download any sensors of your choice</b>-->
+<!--							if you do not need the full dataset. For all subdirectories under-->
+<!--							<code>/DriveCoT/sweeps</code>, folders with the name <code>id_0</code> contain data collected-->
+<!--							from the roadside unit,-->
+<!--							while folders with the name <code>id_1</code> to <code>id_5</code>-->
+<!--							are data collected from the vehicles.-->
+<!--						</p>-->
+
+<!--						<button class="collapsible-list" style="font-size:18px">File Structure </button>-->
+						<button class="collapsible-list" style="font-size:18px">File Structure </button>
+						<div class="content-collapse-list" style="max-height:3000px">
+							<div class="row">
+								<div class="col-lg-6 col-sm-6 wow" data-wow-animation-name="none">
+									<div class="listree show">
+									<ul style="font-size:16px">
+										<li><b>DriveCoT_data</b></li>
+
+										<ul class="listree no-bullets">
+															<li>
+																<div class="listree-submenu-heading">calib</div>
+																<ul class="listree-submenu-items">
+																	<li>
+																		<div class="listree-submenu-heading">TownXX_routeXXXX_scenarioXXXX</div>
+																		<ul class="listree-submenu-items">
+																			<li>TownXX_routeXXXX_scenarioXXXX_XXX.pkl</li>
+																		</ul>
+																	</li>
+																</ul>
+															</li>
+															<li>
+																<div class="listree-submenu-heading">Camera_Back</div>
+																<ul class="listree-submenu-items">
+																	<li>
+																		<div class="listree-submenu-heading">TownXX_routeXXXX_scenarioXXXX</div>
+																		<ul class="listree-submenu-items">
+																			<li>TownXX_routeXXXX_scenarioXXXX_XXX.jpg</li>
+																		</ul>
+																	</li>
+																</ul>
+															</li>
+															<li>
+																<div class="listree-submenu-heading">Camera_BackLeft</div>
+																<ul class="listree-submenu-items">
+																	<li>
+																		<div class="listree-submenu-heading">TownXX_routeXXXX_scenarioXXXX</div>
+																		<ul class="listree-submenu-items">
+																			<li>TownXX_routeXXXX_scenarioXXXX_XXX.jpg</li>
+																		</ul>
+																	</li>
+																</ul>
+															</li>
+															<li>
+																<div class="listree-submenu-heading">Camera_BackRight</div>
+																<ul class="listree-submenu-items">
+																	<li>
+																		<div class="listree-submenu-heading">TownXX_routeXXXX_scenarioXXXX</div>
+																		<ul class="listree-submenu-items">
+																			<li>TownXX_routeXXXX_scenarioXXXX_XXX.jpg</li>
+																		</ul>
+																	</li>
+																</ul>
+															</li>
+															<li>
+																<div class="listree-submenu-heading">Camera_Front</div>
+																<ul class="listree-submenu-items">
+																	<li>
+																		<div class="listree-submenu-heading">TownXX_routeXXXX_scenarioXXXX</div>
+																		<ul class="listree-submenu-items">
+																			<li>TownXX_routeXXXX_scenarioXXXX_XXX.jpg</li>
+																		</ul>
+																	</li>
+																</ul>
+															</li>
+															<li>
+																<div class="listree-submenu-heading">Camera_FrontLeft</div>
+																<ul class="listree-submenu-items">
+																	<li>
+																		<div class="listree-submenu-heading">TownXX_routeXXXX_scenarioXXXX</div>
+																		<ul class="listree-submenu-items">
+																			<li>TownXX_routeXXXX_scenarioXXXX_XXX.jpg</li>
+																		</ul>
+																	</li>
+																</ul>
+															</li>
+															<li>
+																<div class="listree-submenu-heading">Camera_FrontRight</div>
+																<ul class="listree-submenu-items">
+																	<li>
+																		<div class="listree-submenu-heading">TownXX_routeXXXX_scenarioXXXX</div>
+																		<ul class="listree-submenu-items">
+																			<li>TownXX_routeXXXX_scenarioXXXX_XXX.jpg</li>
+																		</ul>
+																	</li>
+																</ul>
+
+															</li>
+															<li>
+																<div class="listree-submenu-heading">CoT</div>
+																<ul class="listree-submenu-items">
+																	<li>
+																		<div class="listree-submenu-heading">TownXX_routeXXXX_scenarioXXXX</div>
+																		<ul class="listree-submenu-items">
+																			<li>TownXX_routeXXXX_scenarioXXXX_CoT_XXX.txt</li>
+																		</ul>
+																	</li>
+																</ul>
+															</li>
+															<li>
+																<div class="listree-submenu-heading">CoT_dict</div>
+																<ul class="listree-submenu-items">
+																	<li>
+																		<div class="listree-submenu-heading">TownXX_routeXXXX_scenarioXXXX</div>
+																		<ul class="listree-submenu-items">
+																			<li>TownXX_routeXXXX_scenarioXXXX_dict_XXX.pkl</li>
+																		</ul>
+																	</li>
+																</ul>
+															</li>
+
+															<li>
+																<div class="listree-submenu-heading">label</div>
+																<ul class="listree-submenu-items">
+																	<li>
+																		<div class="listree-submenu-heading">TownXX_routeXXXX_scenarioXXXX</div>
+																		<ul class="listree-submenu-items">
+																			<li>TownXX_routeXXXX_scenarioXXXX_XXX.txt</li>
+																		</ul>
+																	</li>
+																</ul>
+															</li>
+															<li>
+																<div class="listree-submenu-heading">lidar01</div>
+																<ul class="listree-submenu-items">
+																	<li>
+																		<div class="listree-submenu-heading">TownXX_routeXXXX_scenarioXXXX</div>
+																		<ul class="listree-submenu-items">
+																			<li>TownXX_routeXXXX_scenarioXXXX_XXX.npz</li>
+																		</ul>
+																	</li>
+																</ul>
+															</li>
+<!--														</ul>-->
+
+<!--													</li>-->
+
+													<li>
+														<div class="listree-submenu-heading">meta</div>
+														<ul class="listree-submenu-items">
+															<li>TownXX_routeXXXX_scenarioXXXX_XXX.txt</li>
+														</ul>
+													</li>
+
+												</ul>
+											</li>
+
+
+
+
+
+										</ul>
+<!--									</li>-->
+<!--								</ul>-->
+							</div>
+<!--						</ul>-->
+					</div>
+				</div>
+			</div>
+
+
+
+						<button class="collapsible-list" style="font-size:18px">Download link </button>
+						<div class="content-collapse-list" style="max-height:1000px">
+							<div class="row">
+								<br>
+								<div class="row">
+									<div class="col-lg-6 col-sm-6 wow" data-wow-animation-name="none">
+
+										<ul style="font-size:16px">
+											<li><b>Link</b>
+												<ul>
+														<li>DriveCoT_dataset
+															<ul>
+																<li>DriveCoT_dataset.zip</li>
+															</ul>
+														</li>
+														<li>Dataset split files (.txt files and .pkl files)
+															<ul>
+																<li>DriveCoT_infos.zip</li>
+															</ul>
+														</li>
+<!--														<li>Pretrained checkpoints</li>-->
+												</ul>
+											</li>
+										</ul>
+									</div>
+
+									<div class="col-lg-3 col-sm-3 wow" data-wow-animation-name="none">
+
+										<ul style="font-size:16px" class="no-bullets">
+											<li><b>Download Link</b></li><br>
+
+											<li><a href="https://connecthkuhk-my.sharepoint.com/:u:/g/personal/wangtq_connect_hku_hk/EQsS2mspoVJOlUT9qKWt2YEB-Dt4KnORf5k6uMUoxKYe9w?e=T7INGS">OneDrive</a>&nbsp;&nbsp;&nbsp;
+												<a href="https://drive.google.com/file/d/1PNI7roKziA9s434XGz1qNH88MyR12RO_/view?usp=sharing">GoogleDrive</a>
+											</li>
+
+											<br>
+											<li>
+												<a href="https://connecthkuhk-my.sharepoint.com/:u:/g/personal/wangtq_connect_hku_hk/ES476QnvxItAoCigApRa_wcBP9zPVmVSp38boYSMejZOvg?e=B4Wx88">OneDrive</a>&nbsp;&nbsp;&nbsp;
+												<a href="https://drive.google.com/file/d/14TdAmqJmS_0MKCG6pyaMXb3LNrC407uI/view?usp=sharing">GoogleDrive</a>
+											</li>
+<!--											<li> <br> </li>-->
+<!--											</li>-->
+										</ul>
+									</div>
+
+									<div class="col-lg-3 col-sm-3 wow" data-wow-animation-name="none">
+										<ul style="font-size:16px" class="no-bullets">
+											<li><b>Size</b></li><br>
+											<li>25.8 GB</li>
+
+											<br>
+											<li>171.4 MB</li>
+										</ul>
+									</div>
+								</div>
+
+
+<!--								<div class="row">-->
+<!--									<div class="col-lg-6 col-sm-6 wow" data-wow-animation-name="none">-->
+<!--										<ul style="font-size:16px">-->
+<!--											<li><b>Metadata</b>-->
+<!--												<ul>-->
+<!--													<li>v1.0-mini</li>-->
+<!--													<li>Maps</li>-->
+<!--												</ul>-->
+<!--											</li>-->
+<!--										</ul>-->
+<!--									</div>-->
+
+<!--									<div class="col-lg-3 col-sm-3 wow" data-wow-animation-name="none">-->
+
+<!--										<ul style="font-size:16px" class="no-bullets">-->
+<!--											<li> <br> </li>-->
+<!--											<li><a-->
+<!--													href="https://drive.google.com/file/d/17y0E1QPwl3bKhZlnd0MztK1FukaTg02T/view?usp=sharing">OneDrive</a>-->
+<!--											</li>-->
+<!--											<li><a-->
+<!--													href="https://drive.google.com/file/d/1NyM2fJpkzDczZ7lW3Mdzid4bwhS7q92F/view?usp=sharing">OneDrive</a>-->
+<!--											</li>-->
+<!--											</li>-->
+<!--										</ul>-->
+<!--									</div>-->
+
+<!--									<div class="col-lg-3 col-sm-3 wow" data-wow-animation-name="none">-->
+<!--										<ul style="font-size:16px" class="no-bullets">-->
+<!--											<li> <br> </li>-->
+<!--											<li>974.7 MB</li>-->
+<!--											<li>344 KB</li>-->
+<!--											</li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</div>-->
+
+							</div>
+						</div>
+
+
+
+						<br>
+
+<!--						<p style="font-size:16px"> If you find the dataset helpful, please consider citing us.</p>-->
+
+<!--						<p style="font-size:16px">-->
+<!--							@InProceedings{Wang_2024_DriveCoT, <br>-->
+<!--							&emsp;&emsp;&emsp;&emsp;title = {DriveCoT: A Motion and Accident Prediction Benchmark for V2X Autonomous Driving}, <br>-->
+<!--							&emsp;&emsp;&emsp;&emsp;author = {Wang, Tianqi and Kim, Sukmin and Ji, Wenxuan and Xie, Enze and Ge, Chongjian and Chen, Junsong and Li, Zhenguo and Ping, Luo}, <br>-->
+<!--							&emsp;&emsp;&emsp;&emsp;journal = {arXiv preprint arXiv:2304.01168}, <br>-->
+<!--							&emsp;&emsp;&emsp;&emsp;year = {2024} <br>-->
+<!--							}-->
+                    	<h2>Citation</h2>
+                    	<p style="font-size:16px"> If you find the dataset helpful, please consider citing us.</p>
+                    	<pre>
+	@article{Wang_2024_DriveCoT,
+		title = {DriveCoT: Integrating Chain-of-Thought Reasoning with End-to-End Driving},
+		author = {Wang, Tianqi and Xie, Enze and Chu, Ruihang and Li, Zhenguo and Ping, Luo},
+		journal = {arXiv preprint arXiv:xxxxx},
+		year = {2024}
+	}
+                    	</pre>
+<!--							<br>-->
+<!--							@article{Li_2021_RAL,<br>-->
+<!--							&emsp;&emsp;&emsp;&emsp;title = {DriveCoT: Multi-Agent Collaborative Perception Dataset and-->
+<!--							Benchmark for Autonomous Driving},<br>-->
+<!--							&emsp;&emsp;&emsp;&emsp;author = {Li, Yiming and Ma, Dekun and An, Ziyan and Wang, Zixun and-->
+<!--							Zhong, Yiqi and Chen, Siheng and Feng, Chen},<br>-->
+<!--							&emsp;&emsp;&emsp;&emsp;journal = {IEEE Robotics and Automation Letters},<br>-->
+<!--							&emsp;&emsp;&emsp;&emsp;year = {2022}<br>-->
+<!--							}-->
+						</p>
+
+					</div>
+
+
+				</div>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<hr>
+
+			</div>
+		</section>
+
+
+	</div>
+
+	<footer>
+		<div id="sub-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="copyright">
+							<p><span>&copy; HKU MMLab and Huawei Noah's Ark Lab 2024 All rights reserved.
+								</span> </p>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<ul class="social-network">
+							<li>
+								<a class="fa fa-github" data-placement="top" href="https://github.com/tianqi-wang1996/DriveCoT/"
+									style="font-style: italic" title="GitHub"></a>
+							</li>
+							<li>
+								<a class="fa fa-external-link" data-placement="top" href="http://luoping.me/"
+									style="font-style: italic" title="Lab Website"></a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+	<!-- javascript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="js/jquery.fancybox-media.js"></script>
+	<script src="js/portfolio/jquery.quicksand.js"></script>
+	<script src="js/portfolio/setting.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/animate.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="https://unpkg.com/listree/dist/listree.umd.min.js"></script>
+	<script>
+		var coll = document.getElementsByClassName("collapsible-list");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function () {
+				this.classList.toggle("active-list");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight) {
+					content.style.maxHeight = null;
+				} else {
+					content.style.maxHeight = content.scrollHeight + "px";
+				}
+			});
+		}
+
+		listree();
+	</script>
+</body>
+
+</html>

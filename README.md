@@ -1,2 +1,2 @@
 # DriveCoT.github.io
-Code for DriveCoT website
+Website for DriveCoT dataset
